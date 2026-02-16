@@ -9,26 +9,27 @@ ORDER_BUTTON_BOTTOM = (By.XPATH,"(//button[normalize-space()='Заказать']
 #Локатор для карты со всеми вопросами
 FAQ_CARD = (By.XPATH, "//div[@data-accordion-component='AccordionItem']")
 #  1) Стоимость и оплата
-QUESTION_PRICE_AND_PAYMENT_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Сколько это стоит? И как оплатить?']")
-ANSWER_PRICE_AND_PAYMENT_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemPanel'][@aria-labelledby=//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Сколько это стоит? И как оплатить?']/@id]//p")
+QUESTION_PRICE_AND_PAYMENT_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__heading-0[data-accordion-component='AccordionItemButton']")
+ANSWER_PRICE_AND_PAYMENT_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__panel-0[data-accordion-component='AccordionItemPanel'] p")
 # 2) Несколько самокатов
-QUESTION_MULTIPLE_SCOOTERS_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Хочу сразу несколько самокатов! Так можно?']")
-ANSWER_MULTIPLE_SCOOTERS_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemPanel'][@aria-labelledby=//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Хочу сразу несколько самокатов! Так можно?']/@id]//p")
+QUESTION_MULTIPLE_SCOOTERS_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__heading-1[data-accordion-component='AccordionItemButton']")
+ANSWER_MULTIPLE_SCOOTERS_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__panel-1[data-accordion-component='AccordionItemPanel'] p")
 # 3) Расчёт времени аренды
-QUESTION_RENT_TIME_CALCULATION_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Как рассчитывается время аренды?']")
-ANSWER_RENT_TIME_CALCULATION_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemPanel'][@aria-labelledby=//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Как рассчитывается время аренды?']/@id]//p")
+QUESTION_RENT_TIME_CALCULATION_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__heading-2[data-accordion-component='AccordionItemButton']")
+ANSWER_RENT_TIME_CALCULATION_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__panel-2[data-accordion-component='AccordionItemPanel'] p")
 # 4) Заказ на сегодня
-QUESTION_ORDER_FOR_TODAY_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Можно ли заказать самокат прямо на сегодня?']")
-ANSWER_ORDER_FOR_TODAY_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemPanel'][@aria-labelledby=//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Можно ли заказать самокат прямо на сегодня?']/@id]//p")
+QUESTION_ORDER_FOR_TODAY_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__heading-3[data-accordion-component='AccordionItemButton']")
+ANSWER_ORDER_FOR_TODAY_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__panel-3[data-accordion-component='AccordionItemPanel'] p")
 # 5) Продление или ранний возврат
-QUESTION_EXTEND_OR_RETURN_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Можно ли продлить заказ или вернуть самокат раньше?']")
-ANSWER_EXTEND_OR_RETURN_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemPanel'][@aria-labelledby=//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Можно ли продлить заказ или вернуть самокат раньше?']/@id]//p")
+QUESTION_EXTEND_OR_RETURN_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__heading-4[data-accordion-component='AccordionItemButton']")
+ANSWER_EXTEND_OR_RETURN_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__panel-4[data-accordion-component='AccordionItemPanel'] p")
 # 6) Зарядка в комплекте
-QUESTION_CHARGER_INCLUDED_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Вы привозите зарядку вместе с самокатом?']")
-ANSWER_CHARGER_INCLUDED_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemPanel'][@aria-labelledby=//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Вы привозите зарядку вместе с самокатом?']/@id]//p")
+QUESTION_CHARGER_INCLUDED_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__heading-5[data-accordion-component='AccordionItemButton']")
+ANSWER_CHARGER_INCLUDED_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__panel-5[data-accordion-component='AccordionItemPanel'] p")
 # 7) Отмена заказа
-QUESTION_ORDER_CANCELLATION_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Можно ли отменить заказ?']")
-ANSWER_ORDER_CANCELLATION_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemPanel'][@aria-labelledby=//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Можно ли отменить заказ?']/@id]//p")
+QUESTION_ORDER_CANCELLATION_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__heading-6[data-accordion-component='AccordionItemButton']"
+)
+ANSWER_ORDER_CANCELLATION_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__panel-6[data-accordion-component='AccordionItemPanel'] p")
 # 8) Доставка за МКАД
-QUESTION_DELIVERY_OUTSIDE_MKAD_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Я жизу за МКАДом, привезёте?']")
-ANSWER_DELIVERY_OUTSIDE_MKAD_DROPDOWN_MENU = (By.XPATH,"//div[@data-accordion-component='AccordionItemPanel'][@aria-labelledby=//div[@data-accordion-component='AccordionItemButton' and normalize-space()='Я жизу за МКАДом, привезёте?']/@id]//p")
+QUESTION_DELIVERY_OUTSIDE_MKAD_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__heading-7[data-accordion-component='AccordionItemButton']")
+ANSWER_DELIVERY_OUTSIDE_MKAD_DROPDOWN_MENU = (By.CSS_SELECTOR,"div.Home_FAQ__3uVm4 #accordion__panel-7[data-accordion-component='AccordionItemPanel'] p")

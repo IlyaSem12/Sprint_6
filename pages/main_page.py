@@ -3,7 +3,6 @@ import allure
 from locators.main_page_locators import *
 from locators.common_locators import *
 from pages.base_page import BasePage
-from pages.order_page import OrderPageScooter
 from config import *
 
 
@@ -40,15 +39,16 @@ class MainPageScooter(BasePage):
         self.click_faq_question_menu(question_locator)
         return self.get_text(answer_locator)
 
+    def get_faq_question_by_text(self, question_locator):
+        return self.get_text(question_locator)
+
     @allure.step('Нажимаем на верхнюю кнопку "Звказать"')
     def click_order_button_top(self):
         self.click(ORDER_BUTTON_TOP)
-        return OrderPageScooter(self.browser)
     
     allure.step('Нажимаем на нижнюю кнопку "Звказать"')
     def click_order_button_bottom(self):
         self.click(ORDER_BUTTON_BOTTOM)
-        return OrderPageScooter(self.browser)
     
     allure.step(f'Ожидаем пепрехода на {DZEN_URL}')
     def wait_for_switch_to_dzen_page(self):

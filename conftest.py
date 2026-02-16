@@ -3,6 +3,7 @@ import allure
 from config import *
 from selenium import webdriver 
 from pages.main_page import MainPageScooter
+from pages.order_page import OrderPageScooter
 from locators.main_page_locators import *
 from locators.common_locators import *
 from locators.order_page_locators import *
@@ -30,3 +31,9 @@ def main_page(browser):
         page.accept_cookies() #Принимаем куки
     return page
 
+@pytest.fixture()
+def order_page(browser):
+    """Фикстура для создания объекта класса страницы заказа"""
+    #Создаем объект класса OrderPageScooter
+    page = OrderPageScooter(browser)
+    return page

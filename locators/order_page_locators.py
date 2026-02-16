@@ -31,18 +31,15 @@ ORDER_BUTTON =(By.XPATH, "//div[contains(@class, 'Order_Content')]//button[text(
 # Карточка/контейнер модального окна
 CONFIRM_MODAL = (By.XPATH, "//div[contains(@class,'Order_Modal')]")
 # Заголовок модалки (текст "Хотите оформить заказ?")
-CONFIRM_MODAL_TITLE = (By.XPATH,"//div[contains(@class,'Order_Modal')]//div[contains(@class,'Order_ModalHeader') and contains(normalize-space(), 'Хотите оформить заказ?')]")
+CONFIRM_MODAL_TITLE = (By.XPATH,"//div[contains(@class,'Order_Modal')]//div[contains(@class,'Order_ModalHeader')")
 # Кнопка "Да" внутри модалки
-CONFIRM_YES_BUTTON = (
-    By.XPATH,
-    "//div[contains(@class,'Order_Modal')]//div[contains(@class,'Order_Buttons')]//button[normalize-space()='Да']"
-)
+CONFIRM_YES_BUTTON = (By.XPATH,"//div[contains(@class,'Order_Modal')]//div[contains(@class,'Order_Buttons')]//button[normalize-space()='Да']")
 #======================Локаторы полей “Заказ оформлен”======================
 # Карточка модального окна
 SUCCESS_MODAL = (By.XPATH,"//div[contains(@class,'Order_Modal')]")
 # Заголовок "Заказ оформлен"
-SUCCESS_MODAL_TITLE = (By.XPATH,"//div[contains(@class,'Order_Modal')]//div[contains(@class,'Order_ModalHeader') and contains(normalize-space(),'Заказ оформлен')]")
+SUCCESS_MODAL_TITLE = (By.XPATH,"//div[contains(@class,'Order_Modal')]//div[contains(@class,'Order_ModalHeader')]")
 # Текст с номером заказа
-ORDER_NUMBER_TEXT = (By.XPATH,"//div[contains(@class,'Order_Modal')]//div[contains(@class,'Order_Text') and contains(text(),'Номер заказа')]")
+ORDER_NUMBER_TEXT = (By.XPATH,"//div[contains(@class,'Order_Modal')]//div[contains(@class,'Order_Text')]")
 # Кнопка "Посмотреть статус"
 VIEW_STATUS_BUTTON = (By.XPATH,"//div[contains(@class,'Order_Modal')]//button[normalize-space()='Посмотреть статус']")

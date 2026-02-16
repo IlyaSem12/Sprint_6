@@ -11,3 +11,4 @@ venv/
 # папки
 .vscode
 allure-results
+allure-report/
